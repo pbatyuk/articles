@@ -1,2 +1,3 @@
-# Articles
-A repository containing LaTeX codes of published articles
+# My published articles
+
+1. Correlation femtoscopy study at NICA and STAR energies within a viscous hydrodynamic plus cascade model (Publication1)
