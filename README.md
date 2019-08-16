@@ -6,3 +6,5 @@
 Facility and at the Facility for Antiproton and Ion Research in Darmstadt (Publication2)
 
 3. Light cluster production at NICA (Publication3)
+
+4. Femtoscopy with identified charged particles for the NICA energy range (Publication4)
