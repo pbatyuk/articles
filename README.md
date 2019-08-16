@@ -10,3 +10,7 @@ Facility and at the Facility for Antiproton and Ion Research in Darmstadt (Publi
 4. Femtoscopy with identified charged particles for the NICA energy range (Publication4)
 
 5. Разработка методов трекинга для эксперимента BM@N на Нуклотроне ОИЯИ (Publication5)
+
+6. Event reconstruction in the BM@N experiment (Publication6)
+
+7. Track Reconstruction in the BM@N Experiment (Publication7)
