@@ -10,6 +10,7 @@
 \usepackage{lscape}
 \usepackage{epsfig}
 \usepackage{multirow}
+\usepackage{color}
 
 \originalTeX
 %\russianTeX
@@ -36,11 +37,9 @@ L.\,Malinina$^{~a, b}$, K. Mikhaylov$^{~a, c}$, G. Nigmatkulov$^{~d}$}
   The correlation femtoscopy allows one to measure the space-time characteristics of particle production processes
   due to the effects of quantum statistics (QS) and final state interactions (FSI).
   Femtoscopy at lower energies was intensively studied at AGS, SPS and in the Beam Energy Scan (BES) program.
-  The experiments already operated and planned to be put into operation within the NICA complex have a very extensive physical program covering a lot of physics to be investigated,
-  in particular, the femtoscopy. In the work we discuss possibilities to observe a difference from the first order phase transition expected, according some theoretical predictions,
-  at low energies
-  and  the  crossover  one  at  high energies  with the femtoscopy observables using a hybrid model.
-  First results, mainly on pion, and also on kaon femtoscopy are also presented  in the paper.
+  In the work we discuss possibilities to observe a difference from the first order phase transition expected, according some theoretical predictions,
+  at low energies and the crossover one, to be occurred at high energies, with the femtoscopy observables using the hybrid model $vHLLE+UrQMD$.
+  The possibilities to use kaon femtoscopy complementary to the usually used pion one are discussed.
 \end{abstract}
 \vspace*{6pt}
 
@@ -54,7 +53,8 @@ PACS:
 
 The well developed femtoscopy formalism is considered as a very powerful tool to be used for study of the space-time evolution occurred in course of heavy-ion collision.
 The NICA energy range ($\sqrt{s_{NN}} = 4 - 11$ GeV) with existing (BM@N) and future experiments (MPD, SPD) to be operated looks very promising.
-In particular, it would allow one, due to a high planned level of luminosity, to measure a set of femtoscopy observables with a high accuracy.     
+In particular, it would allow one, due to a high planned level of luminosity, to extend the usually used set of pion femtoscopy observables to heavier particles to perform
+  measurements with a high accuracy.     
 
 An assumption that the nuclear matter undergoes the first order phase transition, probably, to be occurred at the NICA energies motivated our studies.
 In~\cite{Rischke:1996em} was shown that the first order phase transition leads to a stalling of the expansion speed and increase of the emission duration $\Delta \tau$.
@@ -65,9 +65,8 @@ At the same time, since the NICA energy range according to some theoretical pred
 by making use of femtoscopy tools, e.g. analysing behaviour of the observables.
 
 To shed light on it, it sounds reasonably to perform a detailed feasibility study on it by use of modern
-hybrid (``sandwich''-like) Monte Carlo generators. As a candidate to be used, due to some reasons, we have taken the vHLLE+UrQMD model. To be known for the model in detail the reader
-is referred to~\cite{Karpenko:2015xea}. The reasons caused our choice and to be mentioned here obligatory are related to a huge set of benefits available for our studies
-with the model. The first one is that the model was tuned with existing experimental data to be able to reproduce quantitatively well a set of bulk observables
+hybrid (``sandwich''-like) Monte Carlo generators. As a candidate to be used, we have taken the vHLLE+UrQMD model.
+ To be known for the model in detail the reader is referred to~\cite{Karpenko:2015xea}. The reasons caused our choice and to be mentioned here obligatory are related to a huge set of benefits available for our studies with the model. The first one is that the model was tuned with existing experimental data to be able to reproduce quantitatively well a set of bulk observables
 (yields, $p_{t}$ and rapidity spectra). The second one is that the model has an option to change EoS when doing simulations. It supports two types of EoS to be used.
 To be familiar with them, one is addressed to~\cite{Steinheimer:2010ib, Kolb:2000sd}. The last but not least mentioned here is that the model demonstrates, as shown
 in Fig.~\ref{fig01}, a dependence of the average pion creation time at the particlization surface and the last interactions on collision energy as a function of the EoS used
@@ -111,25 +110,27 @@ observables which are sensitive to the EoS scenario assumed.
 
   \begin{figure}[t]
     \begin{center}
-      \includegraphics[width=80mm]{fig3.eps}
+      \includegraphics[width=70mm]{fig3.png}
       \vspace{-3mm}
-      \caption{$R_{out} / R_{side}$ (a) and $R^{2}_{out} - R^{2}_{side}$ (b) as a function of $\sqrt{s_{NN}}$ for experimental data and the model calculations.}
+      \caption{Ratio of femtoscopic radii calculated for the two available scenarios of EoS.}
     \end{center}
     \labelf{fig03}
     \vspace{-5mm}
   \end{figure}
   
-  The difference $R^{2}_{out} - R^{2}_{side}$ and the ratio $R_{out} / R_{side}$ are presented in Fig.~\ref{fig03}. Study of the $R_{out} / R_{side}$ ratio looks traditional in
-  the modern femtoscopy. Due to a fact that the $R_{out}$ and $R_{side}$ radii are both reduced by flow, the ratio is a more robust against the flow effects.
-  Our model calculations for both types of EoS used for simulations are in agreement with experimental data within the error bars at all energies available.
-  The XPT EoS describes better the ratio for lowest collision energies and also does the same concerning the radii, as seen in Fig.~\ref{fig02}.
-
+ 
+  Results of another test performed regarding to the sensitivity of femtoscopic observables to the EoS used for simulation are shown in Fig.~\ref{fig03}.
+  It represents a ratio of femtoscopic radii extracted from simulations done with the 1PT EoS (nominator) and those ones with the XPT EoS (denominator).
+  Seen that $R_{side}$ coincides for both scenarios, meanwhile $R_{out}$ and $R_{long}$ are larger for the 1PT EoS and demonstrate a strong $k_{T}$-dependence.
+  It confirms the well known fact that for the 1PT EoS the radial flow developed in the pre-hydro phase of collision is weaker than for the XPT EoS thus emphasizing a strong role
+  of radial flow effects.
+    
   As already told, all we did in~\cite{Batyuk:2017smw} is related to pions, thus a logical continuation of the studies mentioned above includes its expansion to charged identical kaons.
   
  \begin{figure}[t]
     \begin{center}
-      \includegraphics[width=110mm]{fig4a.png}
-      \includegraphics[width=110mm]{fig4b.png}
+      \includegraphics[width=100mm]{fig4a.png}
+      \includegraphics[width=100mm]{fig4b.png}
       \vspace{-3mm}
       \caption{Projections of three-dimensional correlation functions for pions ((a) - (c)) and \newline kaons~((d) - (f)) on out, side and long directions.
       The calculations made at $\sqrt{s_{NN}}$ = 11.5 GeV.}
@@ -149,7 +150,7 @@ observables which are sensitive to the EoS scenario assumed.
      \includegraphics[width=100mm]{fig5a.pdf}
      \includegraphics[width=100mm]{fig5b.pdf}
 \vspace{-3mm}
-\caption{Comparison of the model kaon femtoscopy radii for two energies $\sqrt{s_{NN}}$ = 7.7, 11.5 GeV close to the NICA energy range
+\caption{Comparison of the model pion and kaon femtoscopy radii for two energies $\sqrt{s_{NN}}$ = 7.7, 11.5 GeV close to the NICA energy range
   with pion data got from the BES program.}
 \end{center}
 \labelf{fig05}
@@ -158,8 +159,8 @@ observables which are sensitive to the EoS scenario assumed.
 
 In Fig.~\ref{fig05} the $m_{T}$-dependence of the extracted kaon radii is shown for two energies in the NICA energy range and both possible scenarios of EoS used for simulations.
 The model calculations are compared with existing data for pions got from the BES program.
-One can see that the general behaviour of the kaon and pion radii from the model is very similar. For both cases the first order phase transition EoS overestimates the radii
-and the $R_{out} / R_{side}$ ratio if comparing with the calculations made for the crossover scenario. Despite the almost similar general behaviour, it is seen that
+One can see that the general behaviour of the kaon and pion radii from the model is very similar. For both cases the radii and the $R_{out} / R_{side}$ ratio corresponding
+to the 1PT EoS are larger than those ones for the XPT EoS. Despite the almost similar general behaviour, it is seen that
 the kaon $R_{out}$ has a tendency to diverge for the two types of EoS with increase of $m_{T}$. Probably, it can be attributed to the weak radial flow developed in the pre-hydro phase of
 collision, but it is just an assumption since it has not been investigated yet in detail right now and is planned to be done in the future. 
   
